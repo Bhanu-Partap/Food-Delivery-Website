@@ -321,7 +321,7 @@ section #home {
 .form_group {
   display: flex;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 150%;
 }
 
