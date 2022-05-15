@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  overflow-x: hidden;
+}
+
+/* Logo and image */
+
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  width: 46px;
+  margin: -26px -23px;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  /* border-radius: 10px; */
+  width: 100%;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar::before {
+  content: "";
+  /* background-color: black; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.navbar ul li {
+  display: flex;
+  text-decoration: none;
+  margin: 3px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  display: block;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  text-decoration: none;
+  color: black;
+  margin: 0.8rem;
+  padding: 3px 18px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
+
+.navbar ul li a:hover {
+  /* display:block; */
+  text-decoration: none;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0.8rem;
+  padding: 3px 18px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: -100px 176px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  background: url("../Img/home.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#home h1 {
+  color: black;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 4.4rem;
+  /* position: absolute;
+    top: 155px; */
+}
+
+#home h1:hover {
+  background-color: black;
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  border-radius: 10px;
+  font-size: 4.4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+#home p {
+  font-size: 1.6rem;
+  /* font-weight: bold; */
+  text-align: center;
+  padding: 5px;
+  font-family: sans-serif;
+}
+
+/* Section Part */
+
+screen {
+  min-height: 100vh;
+}
+
+section #home {
+  overflow: hidden;
+}
+
+#services {
+  display: flex;
+  padding: 20px;
+  height: 100%;
+  padding-top: 170px;
+}
+
+#services .box {
+  border: 4px solid salmon;
+  margin: 10px;
+  background-color: white;
+  opacity: 0.8;
+  /* font-weight: bold; */
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+#services .box:hover {
+  border: 4px solid salmon;
+  margin: 10px;
+  background-color: white;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  /* font-weight: bold; */
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-container::before {
+  content: "";
+  background: url("../Img/home2.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#services-container {
+  padding: 90px 30px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+  font-size: 3.5rem;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  margin: 17px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  padding: 6px 20px;
+  background-color: black;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+/* Service configs */
+
+.box img {
+  width: 150px;
+  padding: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 25px; */
+}
+
+.box h2 {
+  padding: 15px;
+  font-size: 2rem;
+}
+
+/* CLIENT SECTION */
+
+.clients img {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  /* justify-content: center; */
+  margin-left: 200px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#clients-section::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#section-aboutus {
+  min-height: 100vh;
+  position: relative;
+  top: 100px;
+  background: url("../Img/client\ page.jpg") no-repeat center center/cover;
+}
+
+#clients-section {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-f {
+  position: relative;
+  bottom: -30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 70px;
+}
+
+/* Contact us section */
+
+#Form-section {
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  align-items: center;
+  background: url("../Img/contact.jpg") no-repeat center center/cover;
+  opacity: 0.9;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  top: 55px;
+  width: 100%;
+  margin: auto;
+  font-size: 1.3rem;
+  /* width: 100%; */
+}
+
+.form_group {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid red;
+  width: 150%;
+}
+
+.form_group label {
+  width: 50%;
+  size: 25px;
+  border-radius: 10px;
+  font-size: 29px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px;
+  margin: auto;
+}
+
+.form_group label:hover {
+  width: 55%;
+  size: 25px;
+  border-radius: 10px;
+  font-size: 29px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px;
+  margin: auto;
+}
+
+.form_group input {
+  width: 100%;
+  size: 25px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 16px;
+}
+
+.btn-s {
+  padding: 8px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  left: 120px;
+  top: 25px;
+  width: 100%;
+  box-shadow: 3px 3px 8px 5px rgba(8, 0, 0, 1);
+}
+
+.btn-s:hover {
+  padding: 10px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  font-size: 25px;
+  transition: all 0.3s ease-in;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px 5px rgb(220, 15, 15);
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 70px;
+  position: relative;
+  bottom: 0px;
+}
